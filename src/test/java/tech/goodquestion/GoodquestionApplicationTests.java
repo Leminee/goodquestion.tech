@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Assertions;
 
 import java.util.Optional;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 @SpringBootTest
 class GoodquestionApplicationTests {
 
@@ -16,25 +18,18 @@ class GoodquestionApplicationTests {
 
 	@Test
 	void test(){ 
-		
 
-		Optional<Object> op = Optional.of("test");
-		//Assertions.assertEquals(true, op);
 
-		String text = "test";
-		int num = 2;
-		int num2 = 3;
+		int result = add(1,2);
+		int excepted = 3;
 
-		String rs = text + (num + num2);
-
-		Assertions.assertEquals("test23",rs);
-
+		assertThat(result).isEqualTo(excepted);
 
 	}
 
 
-	public int getNumber() {
-		return 1;
+	public static int add(int a, int b) {
+		return a +b;
 	}
 
 }
