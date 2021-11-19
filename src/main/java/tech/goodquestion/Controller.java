@@ -73,7 +73,7 @@ public class Controller {
     @GetMapping("/newuser/time")
     public String getLatestUserJoinedDate() {
 
-        return newMemberService.getLatestJoinedMemberDate();
+        return newMemberService.getLatestJoinedMemberDateTime();
 
     }
 }

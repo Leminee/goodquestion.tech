@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import tech.goodquestion.repository.ActiveMemberRepository;
 
 @Service
-public class ActiveMemberServiceImpl implements IActiveMember {
+public class ActiveMemberServiceImpl implements IActiveMemberService {
 
     @Autowired
     private final ActiveMemberRepository activeMemberRepository;

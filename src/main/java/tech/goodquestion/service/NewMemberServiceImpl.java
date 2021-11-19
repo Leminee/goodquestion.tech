@@ -20,7 +20,7 @@ public class NewMemberServiceImpl implements INewMember{
     }
 
     @Override
-    public String getLatestJoinedMemberDate() {
-        return newMemberRepository.getLatestJoinedMemberDate();
+    public String getLatestJoinedMemberDateTime() {
+        return newMemberRepository.getLatestJoinedMemberDateTime();
     }
 }
