@@ -1,6 +1,6 @@
 package tech.goodquestion.service;
 
-public interface IActiveUser {
+public interface IActiveMember {
 
     int getCurrentActiveMember();
     int getRecordActiveMember();

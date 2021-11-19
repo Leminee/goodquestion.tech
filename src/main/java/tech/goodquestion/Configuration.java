@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Configuration {
+package tech.goodquestion;
+
+public class Configuration {
 }

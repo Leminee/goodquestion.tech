@@ -7,11 +7,11 @@ import javax.persistence.Entity;
 import java.util.List;
 
 @org.springframework.stereotype.Service
-public class AmountServiceImp implements IAmountService{
+public class AmountServiceImpl implements IAmountService{
 
     private final AmountMemberRepository amountMemberRepository;
 
-    public AmountServiceImp(AmountMemberRepository amountMemberRepository) {
+    public AmountServiceImpl(AmountMemberRepository amountMemberRepository) {
         this.amountMemberRepository = amountMemberRepository;
     }
 

@@ -9,12 +9,12 @@ import java.util.Date;
 @Data
 @Entity()
 @Table(name="number_member")
-public class NumberMember {
+public class AmountMember {
 
     @GeneratedValue
     @Id
     @Column(name="id_number_member")
-    private long NumberMemberId;
+    private long amountMemberId;
 
     @Column(name="total_member", nullable = false)
     private int totalMember;

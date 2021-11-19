@@ -1,2 +1,7 @@
-package tech.goodquestion.service;public interface INewUser {
+package tech.goodquestion.service;
+
+public interface INewMember {
+
+    String getLatestJoinedMemberName();
+    String getLatestJoinedMemberDate();
 }

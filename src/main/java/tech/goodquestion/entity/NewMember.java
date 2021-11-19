@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name="user_join")
-public class NewUser {
+public class NewMember {
 
     @GeneratedValue
     @Id
@@ -17,7 +17,7 @@ public class NewUser {
     private long joinId;
 
     @Column(name="id_discord", nullable = false)
-    private String userId;
+    private long userId;
 
     @Column(name="user_tag", nullable = false)
     private String userTag;

@@ -5,12 +5,12 @@ import org.springframework.stereotype.Service;
 import tech.goodquestion.repository.ActiveMemberRepository;
 
 @Service
-public class ActiveUserServiceImpl implements IActiveUser{
+public class ActiveMemberServiceImpl implements IActiveMember {
 
     @Autowired
     private final ActiveMemberRepository activeMemberRepository;
 
-    public ActiveUserServiceImpl(ActiveMemberRepository activeMemberRepository) {
+    public ActiveMemberServiceImpl(ActiveMemberRepository activeMemberRepository) {
         this.activeMemberRepository = activeMemberRepository;
     }
 
