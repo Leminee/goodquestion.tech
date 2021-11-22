@@ -1,4 +1,4 @@
-package tech.goodquestion.service;
+package tech.goodquestion.discord.service;
 
 public interface INewMember {
 
