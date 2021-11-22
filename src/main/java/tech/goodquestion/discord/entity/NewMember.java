@@ -1,4 +1,4 @@
-package tech.goodquestion.entity;
+package tech.goodquestion.discord.entity;
 
 
 import lombok.Data;

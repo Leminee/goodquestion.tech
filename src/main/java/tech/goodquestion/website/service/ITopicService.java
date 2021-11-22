@@ -1,2 +1,5 @@
-package tech.goodquestion.website.service;public class ITopicService {
+package tech.goodquestion.website.service;
+
+public interface ITopicService {
+
 }

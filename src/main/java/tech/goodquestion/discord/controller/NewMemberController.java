@@ -1,61 +1,24 @@
-package tech.goodquestion;
+package tech.goodquestion.discord.controller;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.goodquestion.entity.AmountMember;
-import tech.goodquestion.service.ActiveMemberServiceImpl;
-import tech.goodquestion.service.AmountServiceImpl;
-import tech.goodquestion.service.NewMemberServiceImpl;
-
-import java.util.List;
+import tech.goodquestion.discord.service.NewMemberServiceImpl;
 
 
 @Slf4j
 @RestController
 @RequestMapping("/api/v1/")
-public class Controller {
+public class NewMemberController {
 
-    private final AmountServiceImpl amountService;
     private final NewMemberServiceImpl newMemberService;
-    private final ActiveMemberServiceImpl activeUserService;
 
-    public Controller(AmountServiceImpl amountServiceImpl, NewMemberServiceImpl newMemberService, ActiveMemberServiceImpl activeUserServiceImp) {
-        this.amountService = amountServiceImpl;
+    public NewMemberController(NewMemberServiceImpl newMemberService) {
         this.newMemberService = newMemberService;
-        this.activeUserService = activeUserServiceImp;
     }
 
-
-    @GetMapping("/amountmember/log")
-        public List<AmountMember> getAmountUserLog() {
-
-        return amountService.getAmountMemberLogs();
-    }
-
-    @GetMapping("/amountmember/max")
-    public int getMaxAmountUser() {
-
-        return amountService.getMaxAmountMember();
-
-    }
-
-    @GetMapping("/activeuser/now")
-    public int getCurrentActiveUser() {
-
-        return activeUserService.getCurrentActiveMember();
-
-    }
-
-    @GetMapping(path ="/activeuser/record", produces = MediaType.APPLICATION_JSON_VALUE)
-    public int getRecordActiveUser() {
-
-        return activeUserService.getRecordActiveMember();
-
-    }
 
     @GetMapping("/newuser/name")
     public String getLatestUserJoinedName() {

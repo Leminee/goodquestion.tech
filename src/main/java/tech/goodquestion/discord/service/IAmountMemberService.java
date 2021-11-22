@@ -1,10 +1,10 @@
-package tech.goodquestion.service;
+package tech.goodquestion.discord.service;
 
-import tech.goodquestion.entity.AmountMember;
+import tech.goodquestion.discord.entity.AmountMember;
 
 import java.util.List;
 
-public interface IAmountService {
+public interface IAmountMemberService {
 
     int getMaxAmountMember();
     List<AmountMember> getAmountMemberLogs();

@@ -1,2 +1,5 @@
-package tech.goodquestion.website.controller;public class TopicController {
+package tech.goodquestion.website.controller;
+
+public class TopicController {
+
 }

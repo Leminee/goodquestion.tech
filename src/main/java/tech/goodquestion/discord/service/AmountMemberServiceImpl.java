@@ -1,16 +1,16 @@
-package tech.goodquestion.service;
+package tech.goodquestion.discord.service;
 
-import tech.goodquestion.entity.AmountMember;
-import tech.goodquestion.repository.AmountMemberRepository;
+import tech.goodquestion.discord.entity.AmountMember;
+import tech.goodquestion.discord.repository.AmountMemberRepository;
 
 import java.util.List;
 
 @org.springframework.stereotype.Service
-public class AmountServiceImpl implements IAmountService{
+public class AmountMemberServiceImpl implements IAmountMemberService {
 
     private final AmountMemberRepository amountMemberRepository;
 
-    public AmountServiceImpl(AmountMemberRepository amountMemberRepository) {
+    public AmountMemberServiceImpl(AmountMemberRepository amountMemberRepository) {
         this.amountMemberRepository = amountMemberRepository;
     }
 

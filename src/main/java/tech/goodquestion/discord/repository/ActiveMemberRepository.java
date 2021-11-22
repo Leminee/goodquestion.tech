@@ -1,9 +1,9 @@
-package tech.goodquestion.repository;
+package tech.goodquestion.discord.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import tech.goodquestion.entity.ActiveMember;
+import tech.goodquestion.discord.entity.ActiveMember;
 
 @Repository
 public interface ActiveMemberRepository extends JpaRepository<ActiveMember,Long> {

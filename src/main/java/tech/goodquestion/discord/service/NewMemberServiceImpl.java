@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import tech.goodquestion.discord.repository.NewMemberRepository;
 
 @Service
-public class NewMemberServiceImpl implements INewMember{
+public class NewMemberServiceImpl implements INewMemberService {
 
     private final NewMemberRepository newMemberRepository;
 
