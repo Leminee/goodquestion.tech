@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leminee/goodquestion.tech.git"
+  },
+  "author": "Lemine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leminee/goodquestion.tech/issues"
+  },
+  "homepage": "https://github.com/Leminee/goodquestion.tech#readme",
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
+}

@@ -2,7 +2,6 @@ package tech.goodquestion;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,13 +19,8 @@ import java.util.List;
 @RequestMapping("/api/v1/")
 public class Controller {
 
-    @Autowired
     private final AmountServiceImpl amountService;
-
-    @Autowired
     private final NewMemberServiceImpl newMemberService;
-
-    @Autowired
     private final ActiveMemberServiceImpl activeUserService;
 
     public Controller(AmountServiceImpl amountServiceImpl, NewMemberServiceImpl newMemberService, ActiveMemberServiceImpl activeUserServiceImp) {
@@ -63,7 +57,7 @@ public class Controller {
 
     }
 
-    @GetMapping("/newuser")
+    @GetMapping("/newuser/name")
     public String getLatestUserJoinedName() {
 
         return newMemberService.getLatestJoinedMemberName();
