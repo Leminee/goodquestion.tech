@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import tech.goodquestion.discord.service.ActiveMemberServiceImpl;
 
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/v1/active-user/")
 public class ActiveMemberController {
-
 
     private final ActiveMemberServiceImpl activeMemberService;
 
@@ -19,14 +18,14 @@ public class ActiveMemberController {
     }
 
 
-    @GetMapping("/activeuser/now")
+    @GetMapping("now")
     public int getCurrentActiveUser() {
 
         return activeMemberService.getCurrentActiveMember();
 
     }
 
-    @GetMapping(path ="/activeuser/record", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path ="record", produces = MediaType.APPLICATION_JSON_VALUE)
     public int getRecordActiveUser() {
 
         return activeMemberService.getRecordActiveMember();

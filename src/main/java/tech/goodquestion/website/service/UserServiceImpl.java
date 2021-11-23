@@ -24,30 +24,10 @@ public class UserServiceImpl implements IUserService{
     }
 
     @Override
-    public void logIn(User user) {
+    public Optional<User> getUserById(long userId) {
+
+        return userRepository.findById(userId);
 
     }
 
-    @Override
-    public void resetPassword(User user) {
-
-    }
-
-    @Override
-    public Optional<User> getUserById(long userId) throws Exception {
-
-        Optional<User> optionalUser = userRepository.findById(userId);
-
-        if (optionalUser.isEmpty()) throw new Exception();
-
-        return optionalUser;
-
-    }
-
-    @Override
-    public User getProfileData(User user) {
-
-        return null;
-
-    }
 }

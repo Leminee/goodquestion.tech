@@ -9,7 +9,7 @@ import tech.goodquestion.discord.service.AmountMemberServiceImpl;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/v1/server-member/")
 public class AmountMemberController {
 
     private final AmountMemberServiceImpl amountMemberService;
@@ -19,13 +19,13 @@ public class AmountMemberController {
         this.amountMemberService = amountMemberService;
     }
 
-    @GetMapping("/amountmember/log")
+    @GetMapping("log")
     public List<AmountMember> getAmountUserLog() {
 
         return amountMemberService.getAmountMemberLogs();
     }
 
-    @GetMapping("/amountmember/max")
+    @GetMapping("amount")
     public int getMaxAmountUser() {
 
         return amountMemberService.getMaxAmountMember();

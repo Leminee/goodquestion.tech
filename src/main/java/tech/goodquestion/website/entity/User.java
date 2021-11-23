@@ -29,6 +29,9 @@ public class User {
     @Column(name = "mobile", nullable = false)
     private String mobile;
 
+    @Column(name = "collected_points", nullable = false)
+    private int collectedPoints = 0;
+
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at", nullable = false)
