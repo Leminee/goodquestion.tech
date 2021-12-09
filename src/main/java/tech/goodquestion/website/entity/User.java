@@ -27,7 +27,7 @@ public class User {
     private String password;
 
     @Column(name = "mobile", nullable = false)
-    private String mobile;
+    private int mobile;
 
     @Column(name = "collected_points", nullable = false)
     private int collectedPoints = 0;

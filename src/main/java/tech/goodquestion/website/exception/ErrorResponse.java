@@ -1,4 +1,4 @@
-package tech.goodquestion.exception;
+package tech.goodquestion.website.exception;
 
 import lombok.Data;
 
