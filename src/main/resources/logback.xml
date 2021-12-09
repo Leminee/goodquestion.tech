@@ -14,7 +14,7 @@
         </encoder>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>goodquestion-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>gq-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <maxFileSize>10MB</maxFileSize>
             <maxHistory>100</maxHistory>
             <totalSizeCap>50MB</totalSizeCap>

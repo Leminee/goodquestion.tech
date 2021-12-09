@@ -19102,3 +19102,171 @@ javax.persistence.TransactionRequiredException: Executing an update/delete query
 2021-12-09 06:00:20,571 [http-nio-5050-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 1 ms
 2021-12-09 06:00:20,687 [http-nio-5050-exec-2] DEBUG org.hibernate.SQL                                  - UPDATE topic SET vote = vote + 1 WHERE id_topic = ?
 2021-12-09 06:00:20,703 [http-nio-5050-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder                - binding parameter [1] as [BIGINT] - [3]
+2021-12-09 06:17:26,379 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 06:17:26,384 [SpringApplicationShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope               - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@7a0f06ad] for TypeConfiguration
+2021-12-09 06:17:26,384 [SpringApplicationShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope               - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@74c75db5] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@7a0f06ad]
+2021-12-09 06:17:26,387 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-12-09 06:17:26,390 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2021-12-09 06:32:38,342 [main] INFO  t.goodquestion.GoodquestionApplication             - Starting GoodquestionApplication using Java 15.0.1 on Lemines-MBP with PID 38225 (/Users/lem/Documents/Projekte/goodquestion/target/classes started by lem in /Users/lem/Documents/Projekte/goodquestion)
+2021-12-09 06:32:38,344 [main] DEBUG t.goodquestion.GoodquestionApplication             - Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-12-09 06:32:38,344 [main] INFO  t.goodquestion.GoodquestionApplication             - No active profile set, falling back to default profiles: default
+2021-12-09 06:32:38,862 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 06:32:38,862 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-12-09 06:32:38,873 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2021-12-09 06:32:39,001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 06:32:39,001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-12-09 06:32:39,021 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.discord.repository.ActiveMemberRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2021-12-09 06:32:39,022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.discord.repository.AmountMemberRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2021-12-09 06:32:39,023 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.discord.repository.NewMemberRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2021-12-09 06:32:39,031 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.website.repository.UserRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2021-12-09 06:32:39,043 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 41 ms. Found 1 Elasticsearch repository interfaces.
+2021-12-09 06:32:39,046 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 06:32:39,047 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-12-09 06:32:39,051 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.discord.repository.ActiveMemberRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2021-12-09 06:32:39,051 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.discord.repository.AmountMemberRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2021-12-09 06:32:39,052 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.discord.repository.NewMemberRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2021-12-09 06:32:39,053 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface tech.goodquestion.website.repository.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2021-12-09 06:32:39,053 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-12-09 06:32:39,059 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 06:32:39,059 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 06:32:39,086 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2021-12-09 06:32:39,491 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 5050 (http)
+2021-12-09 06:32:39,496 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-5050"]
+2021-12-09 06:32:39,497 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2021-12-09 06:32:39,497 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-12-09 06:32:39,591 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2021-12-09 06:32:39,591 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1216 ms
+2021-12-09 06:32:39,747 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-09 06:32:39,791 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-12-09 06:32:39,886 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 06:32:39,904 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration boolean -> org.hibernate.type.BooleanType@66e827a8
+2021-12-09 06:32:39,904 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration boolean -> org.hibernate.type.BooleanType@66e827a8
+2021-12-09 06:32:39,905 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@66e827a8
+2021-12-09 06:32:39,905 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@44598ef7
+2021-12-09 06:32:39,905 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration true_false -> org.hibernate.type.TrueFalseType@25974207
+2021-12-09 06:32:39,906 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration yes_no -> org.hibernate.type.YesNoType@21a46ff1
+2021-12-09 06:32:39,906 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration byte -> org.hibernate.type.ByteType@38a4e2b0
+2021-12-09 06:32:39,906 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration byte -> org.hibernate.type.ByteType@38a4e2b0
+2021-12-09 06:32:39,907 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@38a4e2b0
+2021-12-09 06:32:39,907 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration character -> org.hibernate.type.CharacterType@541afb85
+2021-12-09 06:32:39,907 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration char -> org.hibernate.type.CharacterType@541afb85
+2021-12-09 06:32:39,907 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@541afb85
+2021-12-09 06:32:39,908 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration short -> org.hibernate.type.ShortType@34c53688
+2021-12-09 06:32:39,908 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration short -> org.hibernate.type.ShortType@34c53688
+2021-12-09 06:32:39,908 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@34c53688
+2021-12-09 06:32:39,909 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration integer -> org.hibernate.type.IntegerType@8c12524
+2021-12-09 06:32:39,909 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration int -> org.hibernate.type.IntegerType@8c12524
+2021-12-09 06:32:39,909 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@8c12524
+2021-12-09 06:32:39,910 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration long -> org.hibernate.type.LongType@62c3f556
+2021-12-09 06:32:39,910 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration long -> org.hibernate.type.LongType@62c3f556
+2021-12-09 06:32:39,910 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Long -> org.hibernate.type.LongType@62c3f556
+2021-12-09 06:32:39,910 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration float -> org.hibernate.type.FloatType@31efacad
+2021-12-09 06:32:39,910 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration float -> org.hibernate.type.FloatType@31efacad
+2021-12-09 06:32:39,911 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@31efacad
+2021-12-09 06:32:39,912 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration double -> org.hibernate.type.DoubleType@5d124d29
+2021-12-09 06:32:39,912 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration double -> org.hibernate.type.DoubleType@5d124d29
+2021-12-09 06:32:39,912 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5d124d29
+2021-12-09 06:32:39,913 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7926352f
+2021-12-09 06:32:39,913 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7926352f
+2021-12-09 06:32:39,913 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7ca492d9
+2021-12-09 06:32:39,913 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7ca492d9
+2021-12-09 06:32:39,914 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration string -> org.hibernate.type.StringType@486e9d1d
+2021-12-09 06:32:39,914 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.String -> org.hibernate.type.StringType@486e9d1d
+2021-12-09 06:32:39,914 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@67e0fd6d
+2021-12-09 06:32:39,915 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7a388990
+2021-12-09 06:32:39,915 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration url -> org.hibernate.type.UrlType@6db328f8
+2021-12-09 06:32:39,915 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6db328f8
+2021-12-09 06:32:39,916 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration Duration -> org.hibernate.type.DurationType@790d8fdd
+2021-12-09 06:32:39,916 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@790d8fdd
+2021-12-09 06:32:39,917 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration Instant -> org.hibernate.type.InstantType@5a090f62
+2021-12-09 06:32:39,917 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5a090f62
+2021-12-09 06:32:39,917 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2b877a54
+2021-12-09 06:32:39,917 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2b877a54
+2021-12-09 06:32:39,918 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2df65a56
+2021-12-09 06:32:39,918 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2df65a56
+2021-12-09 06:32:39,918 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2e56b4d
+2021-12-09 06:32:39,919 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2e56b4d
+2021-12-09 06:32:39,919 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@805e72e
+2021-12-09 06:32:39,919 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@805e72e
+2021-12-09 06:32:39,920 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@30922f8d
+2021-12-09 06:32:39,920 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@30922f8d
+2021-12-09 06:32:39,920 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4026461d
+2021-12-09 06:32:39,920 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4026461d
+2021-12-09 06:32:39,922 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration date -> org.hibernate.type.DateType@31a136a6
+2021-12-09 06:32:39,922 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.sql.Date -> org.hibernate.type.DateType@31a136a6
+2021-12-09 06:32:39,922 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration time -> org.hibernate.type.TimeType@29013ef2
+2021-12-09 06:32:39,923 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@29013ef2
+2021-12-09 06:32:39,923 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration timestamp -> org.hibernate.type.TimestampType@c412556
+2021-12-09 06:32:39,923 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@c412556
+2021-12-09 06:32:39,924 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@c412556
+2021-12-09 06:32:39,924 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7d2c9361
+2021-12-09 06:32:39,925 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration calendar -> org.hibernate.type.CalendarType@6d0290d8
+2021-12-09 06:32:39,925 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6d0290d8
+2021-12-09 06:32:39,925 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6d0290d8
+2021-12-09 06:32:39,925 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@209f3887
+2021-12-09 06:32:39,926 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@685f5d0d
+2021-12-09 06:32:39,926 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration locale -> org.hibernate.type.LocaleType@5d9618f2
+2021-12-09 06:32:39,926 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5d9618f2
+2021-12-09 06:32:39,927 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration currency -> org.hibernate.type.CurrencyType@525647f3
+2021-12-09 06:32:39,927 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@525647f3
+2021-12-09 06:32:39,927 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration timezone -> org.hibernate.type.TimeZoneType@43a4a9e5
+2021-12-09 06:32:39,927 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@43a4a9e5
+2021-12-09 06:32:39,928 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration class -> org.hibernate.type.ClassType@6af609ea
+2021-12-09 06:32:39,928 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6af609ea
+2021-12-09 06:32:39,928 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5c313224
+2021-12-09 06:32:39,928 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5c313224
+2021-12-09 06:32:39,929 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@8840c98
+2021-12-09 06:32:39,929 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration binary -> org.hibernate.type.BinaryType@7f8a9454
+2021-12-09 06:32:39,930 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration byte[] -> org.hibernate.type.BinaryType@7f8a9454
+2021-12-09 06:32:39,930 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration [B -> org.hibernate.type.BinaryType@7f8a9454
+2021-12-09 06:32:39,930 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5e599100
+2021-12-09 06:32:39,930 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5e599100
+2021-12-09 06:32:39,930 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5e599100
+2021-12-09 06:32:39,931 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration row_version -> org.hibernate.type.RowVersionType@58aa1d72
+2021-12-09 06:32:39,931 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration image -> org.hibernate.type.ImageType@5eed6dfb
+2021-12-09 06:32:39,932 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration characters -> org.hibernate.type.CharArrayType@7d3691e1
+2021-12-09 06:32:39,932 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration char[] -> org.hibernate.type.CharArrayType@7d3691e1
+2021-12-09 06:32:39,932 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration [C -> org.hibernate.type.CharArrayType@7d3691e1
+2021-12-09 06:32:39,932 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@646cd766
+2021-12-09 06:32:39,932 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@646cd766
+2021-12-09 06:32:39,932 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@646cd766
+2021-12-09 06:32:39,933 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration text -> org.hibernate.type.TextType@2faa55bb
+2021-12-09 06:32:39,933 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration ntext -> org.hibernate.type.NTextType@764a3e5d
+2021-12-09 06:32:39,934 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration blob -> org.hibernate.type.BlobType@3c7279a5
+2021-12-09 06:32:39,934 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3c7279a5
+2021-12-09 06:32:39,934 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@18dcb8a7
+2021-12-09 06:32:39,935 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration clob -> org.hibernate.type.ClobType@5e85c21b
+2021-12-09 06:32:39,935 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5e85c21b
+2021-12-09 06:32:39,936 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration nclob -> org.hibernate.type.NClobType@25791d40
+2021-12-09 06:32:39,936 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@25791d40
+2021-12-09 06:32:39,936 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7abeabe9
+2021-12-09 06:32:39,936 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@250d440
+2021-12-09 06:32:39,937 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration serializable -> org.hibernate.type.SerializableType@40df6090
+2021-12-09 06:32:39,938 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration object -> org.hibernate.type.ObjectType@11c88cca
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@11c88cca
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5ec88f9e
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7a04f730
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3b11620a
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2fd1ad8a
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@357f6391
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@689faf79
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@582e9152
+2021-12-09 06:32:39,939 [main] DEBUG org.hibernate.type.BasicTypeRegistry               - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7a31ca20
+2021-12-09 06:32:39,960 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2021-12-09 06:32:40,220 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2021-12-09 06:32:40,229 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-12-09 06:32:40,266 [main] DEBUG o.h.type.spi.TypeConfiguration$Scope               - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3d033453] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@43deba42]
+2021-12-09 06:32:40,375 [main] DEBUG o.h.type.spi.TypeConfiguration$Scope               - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3d033453] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@43fd77d8]
+2021-12-09 06:32:40,759 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 06:32:40,764 [main] TRACE o.h.type.spi.TypeConfiguration$Scope               - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@43fd77d8] for TypeConfiguration
+2021-12-09 06:32:40,766 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 06:32:41,300 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 06:32:41,474 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-09 06:32:41,684 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-5050"]
+2021-12-09 06:32:41,689 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 5050 (http) with context path ''
+2021-12-09 06:32:41,699 [main] INFO  t.goodquestion.GoodquestionApplication             - Started GoodquestionApplication in 3.595 seconds (JVM running for 4.139)
+2021-12-09 06:32:43,782 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 06:32:43,782 [SpringApplicationShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope               - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@43fd77d8] for TypeConfiguration
+2021-12-09 06:32:43,782 [SpringApplicationShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope               - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@427144b4] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@43fd77d8]
+2021-12-09 06:32:43,784 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-12-09 06:32:43,788 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
