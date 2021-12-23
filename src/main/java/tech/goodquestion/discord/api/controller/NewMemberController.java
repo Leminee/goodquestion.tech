@@ -1,11 +1,11 @@
-package tech.goodquestion.discord.controller;
+package tech.goodquestion.discord.api.controller;
 
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.goodquestion.discord.service.NewMemberServiceImpl;
+import tech.goodquestion.discord.api.service.NewMemberServiceImpl;
 
 
 @Slf4j
@@ -22,14 +22,14 @@ public class NewMemberController {
 
 
     @GetMapping("name")
-    public String getLatestUserJoinedName() {
+    public String getLatestMemberJoinedName() {
 
         return newMemberService.getLatestJoinedMemberName();
 
     }
 
     @GetMapping("time")
-    public String getLatestUserJoinedDate() {
+    public String getLatestMemberJoinedDate() {
 
         return newMemberService.getLatestJoinedMemberDateTime();
 

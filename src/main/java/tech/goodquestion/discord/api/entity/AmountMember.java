@@ -1,4 +1,4 @@
-package tech.goodquestion.discord.entity;
+package tech.goodquestion.discord.api.entity;
 
 
 import lombok.Data;
@@ -13,15 +13,15 @@ public class AmountMember {
 
     @GeneratedValue
     @Id
-    @Column(name="id_number_member")
+    @Column(name="id")
     private long amountMemberId;
 
     @Column(name="total_member", nullable = false)
     private int totalMember;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "time",nullable = false)
-    private Date time;
+    @Column(name = "updated_at",nullable = false)
+    private Date updatedAt;
 
 
 }

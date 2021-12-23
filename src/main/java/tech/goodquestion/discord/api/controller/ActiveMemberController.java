@@ -1,11 +1,11 @@
-package tech.goodquestion.discord.controller;
+package tech.goodquestion.discord.api.controller;
 
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.goodquestion.discord.service.ActiveMemberServiceImpl;
+import tech.goodquestion.discord.api.service.ActiveMemberServiceImpl;
 
 @RestController
 @RequestMapping("/api/v1/active-user/")
@@ -19,14 +19,14 @@ public class ActiveMemberController {
 
 
     @GetMapping("now")
-    public int getCurrentActiveUser() {
+    public int getCurrentActiveMember() {
 
         return activeMemberService.getCurrentActiveMember();
 
     }
 
     @GetMapping(path ="record", produces = MediaType.APPLICATION_JSON_VALUE)
-    public int getRecordActiveUser() {
+    public int getRecordActiveMember() {
 
         return activeMemberService.getRecordActiveMember();
 

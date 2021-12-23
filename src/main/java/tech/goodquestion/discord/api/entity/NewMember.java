@@ -1,4 +1,4 @@
-package tech.goodquestion.discord.entity;
+package tech.goodquestion.discord.api.entity;
 
 
 import lombok.Data;
@@ -13,7 +13,7 @@ public class NewMember {
 
     @GeneratedValue
     @Id
-    @Column(name="id_user_join")
+    @Column(name="id")
     private long joinId;
 
     @Column(name="id_discord", nullable = false)
@@ -29,6 +29,6 @@ public class NewMember {
     private String avatarUrl;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "joined_on",nullable = false)
-    private Date joinedOn;
+    @Column(name = "joined_at",nullable = false)
+    private Date joinedAt;
 }

@@ -1,7 +1,7 @@
-package tech.goodquestion.discord.service;
+package tech.goodquestion.discord.api.service;
 
 import org.springframework.stereotype.Service;
-import tech.goodquestion.discord.repository.NewMemberRepository;
+import tech.goodquestion.discord.api.repository.NewMemberRepository;
 
 @Service
 public class NewMemberServiceImpl implements INewMemberService {

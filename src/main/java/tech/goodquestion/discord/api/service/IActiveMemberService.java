@@ -1,4 +1,4 @@
-package tech.goodquestion.discord.service;
+package tech.goodquestion.discord.api.service;
 
 public interface IActiveMemberService {
 

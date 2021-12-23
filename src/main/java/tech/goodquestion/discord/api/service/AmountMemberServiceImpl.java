@@ -1,7 +1,7 @@
-package tech.goodquestion.discord.service;
+package tech.goodquestion.discord.api.service;
 
-import tech.goodquestion.discord.entity.AmountMember;
-import tech.goodquestion.discord.repository.AmountMemberRepository;
+import tech.goodquestion.discord.api.entity.AmountMember;
+import tech.goodquestion.discord.api.repository.AmountMemberRepository;
 
 import java.util.List;
 

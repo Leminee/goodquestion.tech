@@ -1,4 +1,4 @@
-package tech.goodquestion.discord.entity;
+package tech.goodquestion.discord.api.entity;
 
 
 import lombok.Data;
@@ -8,19 +8,19 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="active_user")
+@Table(name="user_online")
 public class ActiveMember {
 
     @GeneratedValue
     @Id
-    @Column(name="id_active_user")
+    @Column(name="id")
     private long amountActiveMemberId;
 
-    @Column(name="active_member", nullable = false)
+    @Column(name="amount", nullable = false)
     private int amountActiveMember;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "time",nullable = false)
+    @Column(name = "updated_at",nullable = false)
     private Date time;
 
 

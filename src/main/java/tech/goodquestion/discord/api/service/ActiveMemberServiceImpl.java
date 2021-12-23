@@ -1,7 +1,7 @@
-package tech.goodquestion.discord.service;
+package tech.goodquestion.discord.api.service;
 
 import org.springframework.stereotype.Service;
-import tech.goodquestion.discord.repository.ActiveMemberRepository;
+import tech.goodquestion.discord.api.repository.ActiveMemberRepository;
 
 @Service
 public class ActiveMemberServiceImpl implements IActiveMemberService {
