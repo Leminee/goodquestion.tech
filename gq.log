@@ -1844,3 +1844,8 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'discord'
 2021-12-23 23:39:59,346 [http-nio-5050-exec-4] TRACE o.h.type.descriptor.sql.BasicExtractor             - extracted value ([COUNT(id_discord)] : [NUMERIC]) - [1]
 2021-12-23 23:40:01,778 [http-nio-5050-exec-5] DEBUG org.hibernate.SQL                                  - SELECT COUNT(id_discord) FROM user_message_content;
 2021-12-23 23:40:01,780 [http-nio-5050-exec-5] TRACE o.h.type.descriptor.sql.BasicExtractor             - extracted value ([COUNT(id_discord)] : [NUMERIC]) - [1]
+2021-12-23 23:43:38,068 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-23 23:43:38,068 [SpringApplicationShutdownHook] TRACE o.h.type.spi.TypeConfiguration$Scope               - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@15be68b] for TypeConfiguration
+2021-12-23 23:43:38,068 [SpringApplicationShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope               - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@310bc16a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@15be68b]
+2021-12-23 23:43:38,071 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2021-12-23 23:43:38,074 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
