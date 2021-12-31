@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import tech.goodquestion.discord.api.repository.AmountMessagesRepository;
 
 @Service
-public class AmountMessagesServiceImpl implements AmountMessagesService {
+public class AmountMessagesServiceImpl implements IAmountMessagesService {
 
     private final AmountMessagesRepository amountMessagesRepository;
 

@@ -1,6 +1,6 @@
 package tech.goodquestion.discord.api.service;
 
-public interface AmountMessagesService {
+public interface IAmountMessagesService {
 
     int getAmountMessages();
 }

@@ -1,5 +1,6 @@
 package tech.goodquestion.discord.api.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,6 +8,7 @@ import tech.goodquestion.discord.api.service.AmountMessagesServiceImpl;
 
 @RestController
 @RequestMapping("/api/v1/amount-messages/")
+@CrossOrigin("*")
 public class AmountMessagesController {
 
   private final AmountMessagesServiceImpl amountMessagesService;
@@ -15,7 +17,7 @@ public class AmountMessagesController {
         this.amountMessagesService = amountMessagesService;
     }
 
-    @GetMapping()
+    @GetMapping("total")
     public int getAmountMessages(){
         return amountMessagesService.getAmountMessages();
     }
