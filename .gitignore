@@ -39,4 +39,5 @@ mvnw
 mvnw.cmd
 test
 *.DS_Store
+*.log
 

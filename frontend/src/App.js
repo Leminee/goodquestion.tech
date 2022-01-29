@@ -16,7 +16,7 @@ const ServerData = () => {
    const fetchServerData = () =>{
 
 
-   axios.get("http://localhost:5050/api/v1/active-user/now").then(res =>{
+      axios.get("http://localhost:5050/api/v1/active-user/now").then(res =>{
 
     getActiveUserNow(res.data);
     });
