@@ -12,9 +12,18 @@ public class AmountMessagesServiceImpl implements IAmountMessagesService {
         this.amountMessagesRepository = amountMessagesRepository;
     }
 
-
     @Override
     public int getAmountMessages() {
         return amountMessagesRepository.getAmountMessages();
+    }
+
+    @Override
+    public int getAmountMessagesSinceLastWeek() {
+        return amountMessagesRepository.getAmountMessagesSinceLastWeek();
+    }
+
+    @Override
+    public int getAmountMessagesSinceLastMonth() {
+        return amountMessagesRepository.getAmountMessagesSinceLastMonth();
     }
 }

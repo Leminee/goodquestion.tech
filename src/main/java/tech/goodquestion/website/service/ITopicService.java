@@ -9,6 +9,6 @@ public interface ITopicService {
     Optional<Topic> getTopicById(long userId);
     void saveTopic(Topic topic);
     void updateTopic(long topicId, String newContent);
-    void deleteTopicById(long topicId);
+    void removeTopicById(long topicId);
     void giveThumbsUp(long topicId);
 }

@@ -1,11 +1,7 @@
 package tech.goodquestion.discord.api.service;
 
-import tech.goodquestion.discord.api.entity.AmountMember;
-
-import java.util.List;
-
+@FunctionalInterface
 public interface IAmountMemberService {
 
     int getMaxAmountMember();
-    List<AmountMember> getAmountMemberLogs();
 }

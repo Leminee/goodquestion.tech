@@ -21,4 +21,14 @@ public class AmountMessagesController {
     public int getAmountMessages(){
         return amountMessagesService.getAmountMessages();
     }
+
+    @GetMapping("last-week")
+    public int getAmountMessagesSinceLastWeek(){
+        return amountMessagesService.getAmountMessagesSinceLastWeek();
+    }
+
+    @GetMapping("last-month")
+    public int getAmountMessagesSinceLastMonth(){
+        return amountMessagesService.getAmountMessagesSinceLastMonth();
+    }
 }

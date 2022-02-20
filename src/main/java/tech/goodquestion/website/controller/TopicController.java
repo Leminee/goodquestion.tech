@@ -56,7 +56,7 @@ public class TopicController {
     @DeleteMapping("delete/{topicId}")
     public ResponseEntity<String> deleteTopicById(@PathVariable long topicId) {
 
-        topicService.deleteTopicById(topicId);
+        topicService.removeTopicById(topicId);
 
         return new ResponseEntity<>("Topic wurde erfolgreich gelöscht!", HttpStatus.ACCEPTED);
 

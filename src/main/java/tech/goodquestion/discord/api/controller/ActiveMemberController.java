@@ -19,7 +19,6 @@ public class ActiveMemberController {
         this.activeMemberService = activeUserService;
     }
 
-
     @GetMapping("now")
     public int getCurrentActiveMember() {
 

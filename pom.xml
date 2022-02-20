@@ -16,6 +16,8 @@
 	<properties>
 		<java.version>11</java.version>
         <kotlin.version>1.6.10</kotlin.version>
+
+
     </properties>
 	<dependencies>
 		<dependency>
@@ -77,11 +79,6 @@
 			<version>1.14.3</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-core</artifactId>
-			<version>1.19.4</version>
-		</dependency>
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
@@ -94,7 +91,13 @@
 			<version>4.3.1</version>
 		</dependency>
 
+
+
+
 	</dependencies>
+
+	<repositories>
+	</repositories>
 
 	<build>
 		<plugins>

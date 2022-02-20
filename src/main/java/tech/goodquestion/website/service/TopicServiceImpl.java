@@ -35,7 +35,7 @@ public class TopicServiceImpl implements ITopicService {
     }
 
     @Override
-    public void deleteTopicById(long topicId) {
+    public void removeTopicById(long topicId) {
 
         topicRepository.deleteById(topicId);
 
