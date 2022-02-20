@@ -11,6 +11,8 @@ const ServerData = () => {
    const [amountMessages, getAmountMessages] = useState([]);
    const [newUserName, getNewUserName] = useState([]);
    const [newUserJoiningTime, getNewUserJoiningTime] = useState([]);
+   const [amountMessagesSinceLastWeek, getAmountMessagesSinceLastWeek] = useState([]);
+   const [amountMessagesSinceLastMonth, getAmountMessagesSinceLastMonth] = useState([]);
 
 
    const fetchServerData = () =>{
@@ -35,6 +37,16 @@ const ServerData = () => {
 
           getAmountMessages(res.data)
       });
+
+       axios.get("http://localhost:5050/api/v1/amount-messages/last-week").then(res =>{
+
+           getAmountMessagesSinceLastWeek(res.data)
+       });
+
+       axios.get("http://localhost:5050/api/v1/amount-messages/last-month").then(res =>{
+
+           getAmountMessagesSinceLastMonth(res.data)
+       });
 
       axios.get("http://localhost:5050/api/v1/new-user/name").then(res =>{
 
@@ -65,6 +77,10 @@ const ServerData = () => {
      <p>{serverMemberAmount}</p>
      <h3>Nachrichten</h3>
      <p>{amountMessages}</p>
+     <h3>Nachrichten seit letzter Woche</h3>
+     <p>{amountMessagesSinceLastWeek}</p>
+     <h3>Nachrichten seit dem letzten Monat</h3>
+     <p>{amountMessagesSinceLastMonth}</p>
      <h3>Neues Mitglied</h3>
      <p>{newUserName}</p>
      <h3>Gejoint am</h3>
