@@ -139,7 +139,7 @@
                 </configuration>
             </plugin>
         </plugins>
-		<finalName>goodquestion</finalName>
+		<finalName>goodquestion-api</finalName>
 	</build>
 
 </project>

@@ -58,12 +58,18 @@ const ServerData = () => {
           getNewUserJoiningTime(res.data)
       });
 
+
  };
 
  useEffect(()=>{ 
    fetchServerData();
  },[]);
 
+
+ function getCurrentYear(){
+
+     return new Date().getFullYear()
+ }
  
  return (
 
@@ -85,6 +91,9 @@ const ServerData = () => {
      <p>{newUserName}</p>
      <h3>Gejoint am</h3>
      <p>{newUserJoiningTime}</p>
+
+
+     <footer>All rights reserved © {getCurrentYear()}</footer>
 
      </div>
 
